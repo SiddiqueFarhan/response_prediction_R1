@@ -26,7 +26,7 @@ st.title("ML Response Variable Prediction (R1)")
 # File upload and data validation
 uploaded_file = st.file_uploader("Choose an Excel file (in csv format)")
 if uploaded_file:
-    df = pd.read_csv(uploaded_file)
+    df = pd.read_excel(uploaded_file)
 
     # Response variable selection
     response_column = st.selectbox("Select the required response variable", ["R1"])
